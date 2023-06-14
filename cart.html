@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x"id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav_upper flex-space-around">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+  <li class="nav_list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+  <li class="nav_list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+              <li class="nav_list">
+                <a href="/index.html" class="nav_link">Logout</a>
+            </li>
+             <li class="nav_list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+            <li class="nav_list">
+                <a href="profile.html"
+                 class="nav_link">
+                    <img class="profile_icon" 
+                    src="./images/profile.jpg"
+                    alt="profile icon"
+                    />
+                </a>
+            </li>
+        </ul>
+        <ul class="nav_lower flex-space-around ">
+            <li class="nav_list"><a href="/index.html" 
+                class="nav-brand nav_link"><img class="profile2" src="./images/profile2.jpg" alt=""></a>
+            </li>
+            <li class="text-style">Your New Experience!</li>
+            <li class="member"> <i class="fa-solid fa-phone-volume"> +2548791124</i></li>
+             <li class="nav_list"><a href="/cart.html" 
+                class="nav-brand nav_link">
+                <span class="manik"><i class="fa-solid fa-cart-shopping fa-2x">
+              </i></span>
+            </a>
+            </li>
+        </ul>
+    </nav>
+ <!-- navbar ends here -->
+<main>
+  <div class="cart flex-center">
+    <div class="cart-items">
+        <div class="cart-items-heading card">
+            <h2>Shopping Cart [2 items]</h2>
+            <div class="cart-items-action">
+                <label for="select">
+                    <input type="checkbox" name="select" id="select">
+                    Select all items
+                </label>
+             
+                    <i class="fas fa-trash-alt manik"></i>
+            
+                <button class="btn">Shop more</button>
+            </div>
+        </div>
+        <div class="cart-item card flex-space-around">
+            <input type="checkbox" name="">
+            <img src="./images/product4.jpg"class=" cart-item-img" alt="">
+            <div class="cart-item-description">
+                <h3 class="product-name">Apple samart watch 8</h3>
+                <h4 class="product-price">Price: $120.50</h4>
+                <p class="cart-item-shipping">Free Shipping</p>
+            </div>
+            <div class="cart-item-actions">
+                <button class="btn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            <div>
+                <button class="btn">
+                    <i class="fas fa-add"></i>
+                </button>
+             <span>3</span>
+                <button class="btn">
+                    <i class="fas fa-minus"></i>
+                </button>
+           </div>
+              </div>
+        </div>
+        <div class="cart-item card flex-space-around">
+            <input type="checkbox" name="">
+            <img src="./images/product1.jpg"class=" cart-item-img" alt="">
+            <div class="cart-item-description">
+                <h3 class="product-name">Sony V-4 Headphone</h3>
+                <h4 class="product-price">Price: $110.99</h4>
+                <p class="cart-item-shipping">Paid Shipping</p>
+            </div>
+            <div class="cart-item-actions">ভগ
+                <button class="btn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            
+            <div>
+                <button class="btn">
+                    <i class="fas fa-add"></i>
+                </button>
+                <span>3</span>
+                <button class="btn">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+   </div>
+ <div class="cart-payment">
+    <div class="cart-payment-summary card">
+        <h2>Payment Summary</h2>
+        <div>
+            <p>subtotal:</p>
+            <p>$341.0</p>
+        </div>
+        <div>
+            <p>Shipping Cost:</p>
+            <p>$2.50</p>
+        </div>
+        <div>
+            <p>Total Cost:</p>
+            <p>$343.50</p>
+        </div>
+        <button class="btn cart-payment-btn">Pay Now</button>
+    </div>
+    <div class="cart-payment-methods card">
+        <h2>Payment Methods</h2>
+           <div >
+        <i class="fa-brands fa-cc-visa fa-3x"></i>
+<i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+<i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+<i class="fa-brands fa-cc-amex fa-3x"></i>
+        <i class="fa-brands fa-cc-paypal fa-3x"></i>
+ </div>
+    </div>
+   </div>
+ </div>
+  </div>
+</main>
+ <!-- footer starts here -->
+    <footer class="footer flex-space-around">
+        <div>
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email Address"/>
+            <button class="btn btn-subscribe">subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2023 Monach Mart. All rights reserved </p>
+        </div>
+    </footer>
+ <!-- footer ends here -->
+ <script src="./scripts/index.js"></script>
+</body>
+</html>
